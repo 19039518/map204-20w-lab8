@@ -5,4 +5,5 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="photo_viewer">Photo Viewer</string>
     <string name="photo_detail">Photo Detail</string>
+    <string name="add_photo">add Photo </string>
 </resources>

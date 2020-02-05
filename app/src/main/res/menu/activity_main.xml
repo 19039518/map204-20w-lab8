@@ -15,5 +15,8 @@
         android:id="@+id/edit_profile"
         android:title="@string/edit_profile"
         app:showAsAction="never"/>
-
+    <item
+        android:id="@+id/add_photo"
+        android:title="@string/add_photo"
+        app:showAsAction="never"/>
 </menu>
