@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Soo Greyhounds Mobile”</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="photo_viewer">Photo Viewer</string>
+    <string name="photo_detail">Photo Detail</string>
+</resources>
