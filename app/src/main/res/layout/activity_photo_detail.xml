@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".PhotoDetailActivity">
 
+    <EditText
+        android:id="@+id/photo_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="125dp" />
+
     <Button
         android:id="@+id/photoViewerButton"
         android:layout_width="wrap_content"
@@ -13,4 +23,34 @@
         android:text="Open Viewer"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="322dp" />
+
+    <EditText
+        android:id="@+id/photo_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <EditText
+        android:id="@+id/ photo_title"
+        android:layout_width="216dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <EditText
+        android:id="@+id/save_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="177dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

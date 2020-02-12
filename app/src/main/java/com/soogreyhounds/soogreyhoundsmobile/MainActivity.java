@@ -19,17 +19,27 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private final int REQUEST_PHOTO = 1;
-    private class PhotoHolder extends RecyclerView.ViewHolder {
+    private class PhotoHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        private Photo mPhoto;
         private TextView mTitleTextView;
 
         public PhotoHolder(View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this);
             mTitleTextView = (TextView) itemView;
         }
 
         public void bindPhoto(Photo photo) {
+            mPhoto = photo;
             mTitleTextView.setText(photo.getTitle());
         }
+        @Override
+        public void onClick(View v) {
+            Intent editPhotoIntent = new Intent(v.getContext(), PhotoDetailActivity.class);
+            editPhotoIntent.putExtra(PhotoDetailActivity.EXTRA_UUID, mPhoto.getUUID());
+            startActivityForResult(editPhotoIntent, REQUEST_PHOTO);
+        }
+
     }
 
     private RecyclerView mPhotoRecyclerView;

@@ -7,4 +7,5 @@
     <string name="photo_detail">Photo Detail</string>
     <string name="add_photo">add Photo </string>
     <string name="save_photo">Save Photo</string>
+    <string name="photo_person">Choose Person</string>
 </resources>
