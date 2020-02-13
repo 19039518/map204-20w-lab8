@@ -19,6 +19,7 @@ public class PhotoStorage {
         values.put(SooGreyhoundsDBSchema.PhotoTable.Cols.TITLE, photo.getTitle());
         values.put(SooGreyhoundsDBSchema.PhotoTable.Cols.URL, photo.getURL());
         values.put(SooGreyhoundsDBSchema.PhotoTable.Cols.NOTE, photo.getNote());
+        values.put(SooGreyhoundsDBSchema.PhotoTable.Cols.PERSON, photo.getPerson());
         return values;
     }
 

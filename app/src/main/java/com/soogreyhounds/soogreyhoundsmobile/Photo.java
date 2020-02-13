@@ -49,6 +49,16 @@ public class Photo {
         this.note = note;
     }
 
-    String note;
+     private String note;
+    private String mPerson;
 
-}
+
+    public String getPerson() {
+        return mPerson;
+    }
+
+    public void setPerson(String person) {
+        mPerson = person;
+    }
+    }
+

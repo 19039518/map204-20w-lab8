@@ -16,11 +16,13 @@ public class PhotoCursorWrapper extends CursorWrapper {
         String url = getString(getColumnIndex(SooGreyhoundsDBSchema.PhotoTable.Cols.URL));
         String note =
                 getString(getColumnIndex(SooGreyhoundsDBSchema.PhotoTable.Cols.NOTE));
+        String person = getString(getColumnIndex(SooGreyhoundsDBSchema.PhotoTable.Cols.PERSON));
         Photo photo = new Photo();
         photo.setUUID(uuid);
         photo.setTitle(title);
         photo.setURL(url);
         photo.setNote(note);
+        photo.setPerson(person);
         return photo;
     }
 }
