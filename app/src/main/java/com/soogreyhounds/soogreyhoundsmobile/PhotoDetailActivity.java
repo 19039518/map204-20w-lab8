@@ -37,11 +37,7 @@ public class PhotoDetailActivity extends AppCompatActivity {
         final Intent pickContact = new Intent(Intent.ACTION_PICK,
                 ContactsContract.Contacts.CONTENT_URI);
 
-        mPersonButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivityForResult(pickContact, REQUEST_CONTACT);
-            }
-        });
+
 
         mUUIDEditText = findViewById(R.id.photo_uuid);
         mTitleEditText = findViewById(R.id.photo_title);
@@ -62,6 +58,12 @@ public class PhotoDetailActivity extends AppCompatActivity {
                 mPersonButton.setText(mPhoto.getPerson());
             }
         }
+
+        mPersonButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivityForResult(pickContact, REQUEST_CONTACT);
+            }
+        });
 
         Button saveButton = findViewById(R.id.save_photo);
 
