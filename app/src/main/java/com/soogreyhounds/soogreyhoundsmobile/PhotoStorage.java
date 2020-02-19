@@ -9,6 +9,7 @@ import com.soogreyhounds.soogreyhoundsmobile.database.PhotoCursorWrapper;
 import com.soogreyhounds.soogreyhoundsmobile.database.SooGreyhoundsDBHelper;
 import com.soogreyhounds.soogreyhoundsmobile.database.SooGreyhoundsDBSchema;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,6 +49,11 @@ public class PhotoStorage {
         ContentValues values = getContentValues(p);
         mDatabase.insert(SooGreyhoundsDBSchema.PhotoTable.NAME, null, values);
     }
+    public File getPhotoFile(Photo photo) {
+        File filesDir = mContext.getFilesDir();
+        return new File(filesDir, photo.getPhotoFilename());
+    }
+
 
     public List<Photo> getPhotos() {
         List<Photo> photos = new ArrayList<>();

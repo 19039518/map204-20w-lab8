@@ -60,5 +60,9 @@ public class Photo {
     public void setPerson(String person) {
         mPerson = person;
     }
+    public String getPhotoFilename() {
+        return "IMG_" + getUUID() + ".jpg";
     }
+
+}
 
